@@ -1,0 +1,170 @@
+Pseudo Code #1
+
+1. Mencari Angka Terbesar
+2. Hitung Freq Angka Terbesar
+3. Outputkan Hasil
+
+Code
+
+//1
+int variable = -1 //karena kita tahu range data dari 0-100
+for (int i = 0; i < n; i++){
+    if (variable < arr[i]){
+        variable = arr[i]
+    }
+}
+
+//2
+freq = 0
+for (int i = 0; i < n; i++){
+    if (arr[i] == variable){
+        freq++;
+    }
+}
+
+//3
+cout << freq
+
+Pseudo Code #2
+
+1. Bucket Sort [0-100]
+2. Cek dari bucket index ke-100, 99, 98, ..., 0 apakah ada isi atau tidak
+    Jika != 0, 
+        output isi bucket[i], 
+        setelah itu break /keluar dari loop
+
+// 1.bucket sort
+int bucket [100]//karena kita tahu range data dari 0-100
+for (int i = 0; i < n; i++){
+    bucket[arr[i]]++;
+}
+
+// 2.output
+for (int i = 100-1; i>-1; i--){
+    if(bucket[i]!=0){
+        cout << bucket[i];
+        break;
+    }
+}
+                        0   1   2   3   4   5   6    
+string arrstring    = {'r','a','c','e','c','a','r'}
+n                   = arrstrin.length()
+arrstring[n/2]      = 'e'
+
+
+# Pseudo code mengecek palindrome
+
+bool palindrome = true
+for (i = 0; n/2; i++){
+    jika string ke-i != string ke-((n-1)-i)
+        bukan palindrom
+        break
+}
+ini adalah palindrom
+
+kita membutuhkan iterasi menghasilkan 
+0, 1, 2
+0, 1, ..., n/2
+
+
+iterasi 0
+r di 0 compare  r di [(n-1)-0]
+
+iterasi 1
+a di 1 compare  a di [(n-1)-1]
+
+iterasi 2
+c di 2 compare  a di [(n-1)-2]
+
+Pseudo code palindrome 
+1. cek awal dan akhir apakah sama
+2. bila berbeda langsung keluar
+3. bila sama sampai akhir maka palindrome
+
+
+# Membalikan bilangan (tidak usah pakai array)
+
+contoh kasus spesifik
+
+int angkaAwal = 12345
+int pembagi = 1
+int angkaBaru = 1
+
+iterasi 0, while(hasilBagi != 0)
+sisa      = 12345%10 = 5
+hasilBagi = 12345/10 = 1234
+angkaBaru = 1*1 + 5  = 5
+
+iterasi 1, while(1234 != 0)
+sisa      = 1234%10 = 4
+hasilBagi = 1234/10 = 123
+angkaBaru = angkaBaru*10 + 4 = 54
+
+iterasi 2, while(123 != 0)
+sisa      = 123%10 = 3
+hasilBagi = 123/10 = 12
+angkaBaru = angkaBaru*10 + 3 = 540 + 3 = 543
+
+.
+.
+.
+while(1 != 0)
+sisa      = 1%10 = 1
+HasilBagi = 0
+angkaBaru = 5432*10 + 1 = 54321
+
+# 
+
+
+int x = 25, ans = 0, i = 1;
+
+while (i <= 25)
+
+iterasi 0, i=1
+    if(x%i == 0)
+        ans = 0 + 1;
+        output = 1 
+    i = 1+1= 2
+
+iterasi 1, i=2
+    if(25%2 == 0)
+
+    i = 2+1 = 3
+
+iterasi 2, i=3
+    if(25%3 == 0)
+    i = 3+1 = 4
+
+.
+.
+.
+
+iterasi 2, i=4
+    if(25%3 == 0)
+    i = 3+1 = 4
+
+pembagi yang habis 25 = {1, 5, 25}
+
+output console = 1 5 25 Sum(Pembagi(x))
+output console = 1 5 25 (1+5+25)
+output console = 1 5 25 31
+
+
+126
+
+1 2 3 6 7 9 14 18 21 42 63 126 312
+
+1 2 3 6 7 9 14 18 21 42 63 126 312
+
+
+
+#rata-rata 1
+1. cari Sum
+2. bagi n
+
+#rata-rata 2
+for(int i = 0; i<n; i++){
+    sum += (1/n) * arr[i] 
+}
+
+cout << sum
