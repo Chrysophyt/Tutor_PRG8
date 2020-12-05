@@ -5,4 +5,5 @@ Kumpulan Soal Ujian Pemgrograman 1 (pakai email universitas) : </br> https://dri
 # Rekaman
 Rekaman 30/09/2020 : </br> https://youtu.be/qiehqDoWf0c </br>
 Rekaman 17/10/2020 : </br> https://drive.google.com/file/d/19nOjkHdSLoDqXGQlUVFd1zYmfDqijGqY/view?usp=sharing </br>
-Rekaman 14/11/2020 : </br>https://drive.google.com/file/d/1pbW1f69Djb9EnI909i4UmckPZQhVCOJ0/view?usp=sharing
+Rekaman 14/11/2020 : </br>https://drive.google.com/file/d/1pbW1f69Djb9EnI909i4UmckPZQhVCOJ0/view?usp=sharing </br>
+Rekaman 05/12/2020 : </br>https://drive.google.com/file/d/1aRM6FHNXOPbtHkXkZ4JC90BV0K7mfrkl/view?usp=sharing
